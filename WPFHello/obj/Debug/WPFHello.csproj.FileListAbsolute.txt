@@ -1,0 +1,16 @@
+D:\Projects\PS_39_Alexander\WPFHello\bin\Debug\WPFHello.exe.config
+D:\Projects\PS_39_Alexander\WPFHello\bin\Debug\WPFHello.exe
+D:\Projects\PS_39_Alexander\WPFHello\bin\Debug\WPFHello.pdb
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\MainWindow.g.cs
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\App.g.cs
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\WPFHello_MarkupCompile.cache
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\WPFHello_MarkupCompile.lref
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\MainWindow.baml
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\WPFHello.g.resources
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\WPFHello.Properties.Resources.resources
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\WPFHello.csproj.GenerateResource.cache
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\WPFHello.exe
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\WPFHello.pdb
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\WPFHello.csprojAssemblyReference.cache
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\MyMessage.g.cs
+D:\Projects\PS_39_Alexander\WPFHello\obj\Debug\MyMessage.baml
