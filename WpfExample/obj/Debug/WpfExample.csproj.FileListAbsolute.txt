@@ -1,0 +1,15 @@
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\MainWindowView.g.cs
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\App.g.cs
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\WpfExample_MarkupCompile.cache
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\WpfExample_MarkupCompile.lref
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\bin\Debug\WpfExample.exe.config
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\bin\Debug\WpfExample.exe
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\bin\Debug\WpfExample.pdb
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\MainWindowView.baml
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\WpfExample.g.resources
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\WpfExample.Properties.Resources.resources
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\WpfExample.csproj.GenerateResource.cache
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\WpfExample.csproj.CoreCompileInputs.cache
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\WpfExample.exe
+C:\Projects\VisualStudioProjects\PS_39_Alexander\WpfExample\obj\Debug\WpfExample.pdb

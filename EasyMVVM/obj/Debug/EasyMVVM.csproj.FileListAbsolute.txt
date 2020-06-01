@@ -1,0 +1,16 @@
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\bin\Debug\EasyMVVM.exe.config
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\bin\Debug\EasyMVVM.exe
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\bin\Debug\EasyMVVM.pdb
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\EasyMVVM.csprojAssemblyReference.cache
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\MainWindow.g.cs
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\App.g.cs
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\EasyMVVM_MarkupCompile.cache
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\EasyMVVM_MarkupCompile.lref
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\MainWindow.baml
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\EasyMVVM.g.resources
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\EasyMVVM.Properties.Resources.resources
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\EasyMVVM.csproj.GenerateResource.cache
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\EasyMVVM.csproj.CoreCompileInputs.cache
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\EasyMVVM.exe
+C:\Projects\VisualStudioProjects\PS_39_Alexander\EasyMVVM\obj\Debug\EasyMVVM.pdb

@@ -16,3 +16,16 @@ D:\Projects\PS_39_Alexander\UserLogin\obj\Debug\UserLogin.csprojAssemblyReferenc
 D:\Projects\PS_39_Alexander\UserLogin\obj\Debug\UserLogin.csproj.CopyComplete
 D:\Projects\PS_39_Alexander\UserLogin\obj\Debug\PS_39_Alexander.exe
 D:\Projects\PS_39_Alexander\UserLogin\obj\Debug\PS_39_Alexander.pdb
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\bin\Debug\PS_39_Alexander.exe.config
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\bin\Debug\PS_39_Alexander.exe
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\bin\Debug\PS_39_Alexander.pdb
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\obj\Debug\UserLogin.csproj.CoreCompileInputs.cache
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\obj\Debug\UserLogin.csproj.CopyComplete
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\obj\Debug\PS_39_Alexander.exe
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\obj\Debug\PS_39_Alexander.pdb
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\bin\Debug\EntityFramework.dll
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\bin\Debug\EntityFramework.xml
+C:\Projects\VisualStudioProjects\PS_39_Alexander\UserLogin\bin\Debug\EntityFramework.SqlServer.xml

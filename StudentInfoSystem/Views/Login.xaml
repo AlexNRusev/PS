@@ -1,0 +1,41 @@
+﻿<Window x:Class="StudentInfoSystem.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentInfoSystem"
+        xmlns:visualcontrols="clr-namespace:StudentInfoSystem.VisualControls"
+        xmlns:viewmodels="clr-namespace:StudentInfoSystem.ViewModels"
+        d:DataContext="{d:DesignInstance viewmodels:LoginViewModel}"
+        mc:Ignorable="d"
+        Title="Login" MinHeight="230" Height="230" MinWidth="300" Width="370">
+
+    <Window.Resources>
+        <Style TargetType="WrapPanel">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
+    
+
+    <GroupBox x:Name="groupBox_UserData" Header="{Binding GroupBoxContent}" Margin="10">
+        <StackPanel x:Name="stackPanel_UserData" Orientation="Vertical" 
+                    Margin="10" VerticalAlignment="Center" 
+                    HorizontalAlignment="Center">
+
+            <visualcontrols:LabelTextBox x:Name="username"
+                                         LabelContent="{Binding UsernameLabel}"
+                                         TextContent="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <visualcontrols:LabelTextBox x:Name="password"
+                                         LabelContent="{Binding PasswordLabel}"
+                                         TextContent="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Button x:Name="button_Login" 
+                    Command="{Binding LoginCommand}"
+                    Content="{Binding LoginButtonContent}"
+                    HorizontalAlignment="Center" 
+                    MinWidth="70" Margin="5" >
+            </Button>
+        </StackPanel>
+    </GroupBox>
+    
+</Window>

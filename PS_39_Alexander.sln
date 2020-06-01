@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserLogin", "UserLogin\User
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseIt", "ExpenseIt\ExpenseIt.csproj", "{E6D9BA51-C4FF-4DC3-8854-EFA20E79D442}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyMVVM", "EasyMVVM\EasyMVVM.csproj", "{6C75872A-FF93-445D-A32A-B30B96335073}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExample", "WpfExample\WpfExample.csproj", "{AFB476EC-4D83-4F37-8938-DFB0706F6E54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{E6D9BA51-C4FF-4DC3-8854-EFA20E79D442}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6D9BA51-C4FF-4DC3-8854-EFA20E79D442}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6D9BA51-C4FF-4DC3-8854-EFA20E79D442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C75872A-FF93-445D-A32A-B30B96335073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C75872A-FF93-445D-A32A-B30B96335073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C75872A-FF93-445D-A32A-B30B96335073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C75872A-FF93-445D-A32A-B30B96335073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFB476EC-4D83-4F37-8938-DFB0706F6E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFB476EC-4D83-4F37-8938-DFB0706F6E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFB476EC-4D83-4F37-8938-DFB0706F6E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFB476EC-4D83-4F37-8938-DFB0706F6E54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

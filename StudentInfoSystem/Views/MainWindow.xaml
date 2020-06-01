@@ -1,0 +1,220 @@
+﻿<Window x:Class="StudentInfoSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentInfoSystem"
+        xmlns:visualcontrols="clr-namespace:StudentInfoSystem.VisualControls"
+        xmlns:viewmodels="clr-namespace:StudentInfoSystem.ViewModels"
+        d:DataContext="{d:DesignInstance viewmodels:MainWindowViewModel}"
+        mc:Ignorable="d"
+        Title="Студентска информационна система" Height="500" Width="800" MinWidth="440" MinHeight="460">
+
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="18"/>
+            <Setter Property="Width" Value="230"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        <Style TargetType="StackPanel">
+            <Setter Property="Orientation" Value="Vertical"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style TargetType="ScrollViewer">
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="WrapPanel">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Width" Value="230"/>
+            <Setter Property="Height" Value="22"/>
+            <Setter Property="IsSynchronizedWithCurrentItem" Value="True"/>
+        </Style>
+        <Style TargetType="GroupBox">
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </Window.Resources>
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="MainGrid">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <GroupBox Header="{Binding GroupBoxPersonalInfo}">
+                <ScrollViewer>
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <Style TargetType="Label">
+                                <Setter Property="MinWidth" Value="85"/>
+                            </Style>
+                        </StackPanel.Resources>
+
+                        <WrapPanel>
+                            <Label x:Name="label_FirstName"
+                                   Content="{Binding LabelFirstName}"/>
+                            <TextBox x:Name="textBox_FirstName"
+                                     IsEnabled="{Binding ElementName=toggleButton, Path=Checked}"
+                                     Text="{Binding Student.FirstName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                        </WrapPanel>
+
+                        <WrapPanel>
+                            <Label x:Name="label_MiddleName"
+                                   Content="{Binding LabelMiddleName}"/>
+                            <TextBox x:Name="textBox_MiddleName"
+                                     IsEnabled="{Binding ElementName=toggleButton, Path=Checked}"
+                                     Text="{Binding Student.MiddleName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                        </WrapPanel>
+
+                        <WrapPanel>
+                            <Label x:Name="label_LastName"
+                                   Content="{Binding LabelLastName}"/>
+                            <TextBox x:Name="textBox_LastName"
+                                     IsEnabled="{Binding ElementName=toggleButton, Path=Checked}"
+                                     Text="{Binding Student.LastName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                        </WrapPanel>
+
+                    </StackPanel>
+                </ScrollViewer>
+            </GroupBox>
+
+            <GroupBox Header="{Binding GroupBoxStudentInfo}"
+                      Grid.Row="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition MinWidth="250" />
+                        <ColumnDefinition MinWidth="190"/>
+                    </Grid.ColumnDefinitions>
+                    <ScrollViewer>
+                        <StackPanel>
+
+                            <StackPanel.Resources>
+                                <Style TargetType="Label">
+                                    <Setter Property="MinWidth" Value="85"/>
+                                </Style>
+                            </StackPanel.Resources>
+
+                            <WrapPanel>
+                                <Label x:Name="label_Faculty"
+                                       Content="{Binding LabelFaculty}"/>
+                                <ComboBox x:Name="comboBox_Faculty"
+                                         IsEnabled="{Binding ElementName=toggleButton, Path=Checked}"
+                                         ItemsSource="{Binding Faculties}"
+                                         SelectedItem="{Binding Student.Faculty.Name}"/>
+                            </WrapPanel>
+
+                            <WrapPanel>
+                                <Label x:Name="label_Speciality"
+                                       Content="{Binding LabelSpeciality}"/>
+                                <TextBox x:Name="textBox_Speciality"
+                                         IsEnabled="{Binding ElementName=toggleButton, Path=Checked}"
+                                         Text="{Binding Student.Speciality, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                            </WrapPanel>
+
+                            <WrapPanel>
+                                <Label x:Name="label_Degree"
+                                       Content="{Binding LabelDegree}"/>
+                                <ComboBox x:Name="comboBox_Degree"
+                                         IsEnabled="{Binding ElementName=toggleButton, Path=Checked}"
+                                         ItemsSource="{Binding Degrees}"
+                                         SelectedItem="{Binding Student.Degree}"/>
+                            </WrapPanel>
+
+                            <WrapPanel>
+                                <Label x:Name="label_Status"
+                                       Content="{Binding LabelStatus}"/>
+                                <ComboBox x:Name="comboBox_Status"
+                                         IsEnabled="{Binding ElementName=toggleButton, Path=Checked}"
+                                         ItemsSource="{Binding StudentStatusChoices}"
+                                         SelectedItem="{Binding Student.Status.StatusDescription}"/>
+                            </WrapPanel>
+
+                            <WrapPanel>
+                                <Label x:Name="label_FacultyNumber"
+                                       Content="{Binding LabelFacultyNumber}"/>
+                                <TextBox x:Name="textBox_FacultyNumber"
+                                         IsEnabled="{Binding ElementName=toggleButton, Path=Checked}"
+                                         Text="{Binding Student.FacultyNumber, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                            </WrapPanel>
+
+                        </StackPanel>
+                    </ScrollViewer>
+
+                    <ScrollViewer Grid.Column="1">
+                        <StackPanel>
+                            <StackPanel.Resources>
+                                <Style TargetType="Label">
+                                    <Setter Property="MinWidth" Value="50"/>
+                                </Style>
+                            </StackPanel.Resources>
+
+                            <WrapPanel>
+                                <Label x:Name="label_Course"
+                                       Content="{Binding LabelCourse}"/>
+                                <TextBox x:Name="textBox_Course"
+                                         IsEnabled="{Binding ElementName=toggleButton, Path=Checked}"
+                                         Text="{Binding Student.Course, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                            </WrapPanel>
+
+                            <WrapPanel>
+                                <Label x:Name="label_Stream"
+                                       Content="{Binding LabelStream}"/>
+                                <TextBox x:Name="textBox_Stream"
+                                         IsEnabled="{Binding ElementName=toggleButton, Path=Checked}"
+                                         Text="{Binding Student.Stream, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                            </WrapPanel>
+
+                            <WrapPanel>
+                                <Label x:Name="label_Group"
+                                       Content="{Binding LabelGroup}"/>
+                                <TextBox x:Name="textBox_Group"
+                                         IsEnabled="{Binding ElementName=toggleButton, Path=Checked}"
+                                         Text="{Binding Student.Group, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                            </WrapPanel>
+                            
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <visualcontrols:MyToggleButton x:Name="toggleButton"
+                                           Grid.Column="0"
+                                           HorizontalAlignment="Center"
+                                           Margin="20,0,0,0"/>
+
+            <Button x:Name="button_Clear"
+                    Grid.Column="1"
+                    Content="{Binding ClearButtonContent}"
+                    Command="{Binding ClearCommand}"/>
+
+
+            <Button x:Name="button_Exit"
+                    Grid.Column="2"
+                    Content="{Binding ExitButtonContent}"
+                    Command="{Binding ExitCommand}"/>
+        </Grid>
+    </Grid>
+</Window>

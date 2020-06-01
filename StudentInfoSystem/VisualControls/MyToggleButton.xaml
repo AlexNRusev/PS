@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="StudentInfoSystem.VisualControls.MyToggleButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StudentInfoSystem.VisualControls"
+             mc:Ignorable="d" 
+             x:Name="myToggleButton"
+             d:DesignHeight="50" d:DesignWidth="100">
+    
+    <UserControl.Resources>
+        <Style TargetType="ToggleButton">
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Grid>
+                            <Rectangle x:Name="frame"
+                                       Fill="{TemplateBinding Background}"
+                                       Stroke="{TemplateBinding BorderBrush}"
+                                       StrokeThickness="2"
+                                       Height="20"
+                                       RadiusX="10"
+                                       RadiusY="10"/>
+                            <Ellipse x:Name="dot"
+                                     Fill="{TemplateBinding BorderBrush}"
+                                     HorizontalAlignment="Left"
+                                     Margin="5"
+                                     Width="10"
+                                     Height="10"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="frame" Property="Stroke" Value="DodgerBlue"/>
+                                <Setter TargetName="frame" Property="Fill" Value="DodgerBlue"/>
+                                <Setter TargetName="dot" Property="Fill" Value="White"/>
+                                <Setter TargetName="dot" Property="HorizontalAlignment" Value="Right"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style TargetType="Label">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=toggleButton, Path=IsChecked}" Value="True">
+                    <Setter Property="Content" Value="Enabled"/>
+                    <Setter Property="Foreground" Value="Green"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ElementName=toggleButton, Path=IsChecked}" Value="False">
+                    <Setter Property="Content" Value="Disabled"/>
+                    <Setter Property="Foreground" Value="Red"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+
+    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center">
+        <ToggleButton x:Name="toggleButton"
+                      IsChecked="{Binding ElementName=myToggleButton, Path=Checked}"/>
+        <Label x:Name="label"/>
+    </WrapPanel>
+</UserControl>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Projects\PS_39_Alexander\StudentInfoSystem\obj\Debug\
+C:\Projects\VisualStudioProjects\PS_39_Alexander\StudentInfoSystem\obj\Debug\
 StudentInfoSystem
 none
 false
 DEBUG;TRACE
-D:\Projects\PS_39_Alexander\StudentInfoSystem\App.xaml
-2-419086188
+C:\Projects\VisualStudioProjects\PS_39_Alexander\StudentInfoSystem\App.xaml
+4976526904
 
-9-1073470774
-14506459047
-Login.xaml;MainWindow.xaml;
+35-694432484
+43922091807
+Views\Login.xaml;Views\MainWindow.xaml;VisualControls\LabelTextBox.xaml;VisualControls\MyToggleButton.xaml;
 
 False
 

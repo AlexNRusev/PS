@@ -9,12 +9,14 @@ namespace StudentInfoSystem
 {
     class StudentValidation
     {
+        private StudentRepository _studentRepository;
         private static ActionOnError _actionOnErrorFunction; 
 
         public delegate void ActionOnError(string s);
 
         public StudentValidation(ActionOnError actionOnErrorFunction)
         {
+            _studentRepository = new StudentRepository();
             _actionOnErrorFunction = actionOnErrorFunction;
         }
 
@@ -32,7 +34,7 @@ namespace StudentInfoSystem
                 return null;
             }
 
-            if(StudentData.TestStudents.Where(s => s.FacultyNumber == user.FacultyNumber).Count() == 0)
+            if(_studentRepository.GetStudentDataByFacultyNumber(user.FacultyNumber) == null)
             {
                 _actionOnErrorFunction("Не си вписан в студентската система с факултетен номер " + user.FacultyNumber);
                 return null;
@@ -40,7 +42,7 @@ namespace StudentInfoSystem
             
 
 
-            return StudentData.TestStudents.Where(s => s.FacultyNumber == user.FacultyNumber).FirstOrDefault();
+            return _studentRepository.GetStudentDataByFacultyNumber(user.FacultyNumber);
         }
     }
 }
